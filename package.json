@@ -1,0 +1,25 @@
+{
+  "name": "odin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermy991/odin.git"
+  },
+  "author": "Hermy Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hermy991/odin/issues"
+  },
+  "homepage": "https://github.com/hermy991/odin#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongojs": "^2.4.1"
+  }
+}
