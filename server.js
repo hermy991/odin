@@ -14,7 +14,7 @@ app.engine("html", require("ejs").renderFile)
 app.use(express.static(path.join(__dirname, "client")))
 
 // Body Parser MW 
-
+ 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
