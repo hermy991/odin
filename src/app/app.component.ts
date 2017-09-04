@@ -1,11 +1,7 @@
 /**
  * Angular 2 decorators and services
  */
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation
-} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { AppState } from './app.service';
 import { PostsService } from './posts/posts.service';
 /**
@@ -18,18 +14,7 @@ import { PostsService } from './posts/posts.service';
   styleUrls: [
     './app.component.scss'
   ],
-  template: `
-    <header>
-    <md-toolbar color="primary">
-     <a [routerLink]="['/']" class="logotTxt">MEAN</a>
-   <a class="links" [routerLink]="['/posts']">Posts</a>
-     <span class="links">more...</span>
-    </md-toolbar>
-    </header>
-      <router-outlet></router-outlet>
-    <footer>
-    </footer>
-  `,
+  templateUrl: './app.component.html',
   providers: [PostsService]
 })
 export class AppComponent implements OnInit {
