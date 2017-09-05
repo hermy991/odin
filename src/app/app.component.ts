@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from "./data.service"
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  interfaces: Array<any>
+  constructor(private ds: DataService) {
+    ds.getInterfaces()
+      .subscribe(res => this.interfaces = res)
+  }
+
 }
