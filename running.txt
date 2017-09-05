@@ -1,0 +1,12 @@
+# info
+https://stackoverflow.com/questions/42895585/hooking-up-express-js-with-angular-cli-in-dev-environment
+
+# development terminal 1
+nodemon [YOUR_EXPRESS_APP.js] --watch server
+
+# development terminal 2
+ng serve --proxy-config proxy.config.json
+
+# production
+ng build -w & nodemon server.js --watch dist --watch server
+

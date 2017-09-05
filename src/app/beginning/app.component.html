@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <ngb-tabset>
+    <ngb-tab title="db">
+      <ng-template ngbTabContent>
+        <div class="card col-sm-6">
+          <h4 class="card-header">MongoDB</h4>
+          <div class="card-body">
+            <p class="card-text">Testiando...</p>
+            <ul>
+              <li *ngFor="let i of interfaces">{{ i.interfaceDisplay }}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card col-sm-6">
+          <h4 class="card-header">API</h4>
+          <div class="card-body">
+            <p class="card-text">Testiando...</p>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="accordion">
+      <ng-template ngbTabContent>
+
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

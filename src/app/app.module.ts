@@ -1,13 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
+/**
+ * Core Modules
+ */
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from "@angular/http"
+import { FormsModule } from "@angular/forms"
+/**
+ * Extern Modules
+ */
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
+/**
+ * Local Objects
+ */
+import { AppComponent } from './beginning/app.component';
 import { DataService } from './data.service';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpModule],
+  imports: [
+    /*Core Modules*/
+    BrowserModule, HttpModule, FormsModule,
+    /*Extern Modules*/
+    NgbModule.forRoot(),
+  ],
   providers: [DataService],
   bootstrap: [AppComponent]
 })
