@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from "../data.service"
+import { HgButtonComponent } from "../-framework/elements/button/button.component"
 
 @Component({
   selector: 'app-root',
